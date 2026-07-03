@@ -46,7 +46,13 @@ SAE-SC consists of three main modules:
 
 ## Framework
 
-The framework figure will be added after the final version of the manuscript is available.
+<p align="center">
+  <img src="assets/framework.png" alt="Framework of SAE-SC" width="100%">
+</p>
+
+<p align="center">
+  <strong>Overview of the proposed SAE-SC framework.</strong>
+</p>
 
 
 
