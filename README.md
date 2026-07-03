@@ -69,7 +69,7 @@ Please refer to the official dataset providers for data access and usage require
 
 ## Acknowledgement
 
-We thank the authors of [MMN](https://github.com/momiji-bit/MMN) for making their code publicly available. Their implementation provided a valuable reference for this project.
+We thank the authors of [Motion Matters: Motion-guided Modulation Network for Skeleton-based Micro-Action Recognition](https://github.com/momiji-bit/MMN) for making their code publicly available. Their implementation provided a valuable reference for this project.
 
 
 
