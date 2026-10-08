@@ -56,9 +56,7 @@ SAE-SC consists of three main modules:
 
 
 
-## Code Release
 
-The source code, configuration files, test prediction files, and reproduction instructions will be released after the paper is accepted.
 
 
 
