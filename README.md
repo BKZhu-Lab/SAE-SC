@@ -113,14 +113,14 @@ Run all commands from the repository root. J and B denote the joint and bone str
 
 ### Training
 
-For MA-52:
+MA-52:
 
 ```bash
 python main.py --config ./config/train/MA52_J.yaml
 python main.py --config ./config/train/MA52_B.yaml
 ```
 
-For iMiGUE:
+iMiGUE:
 
 ```bash
 python main.py --config ./config/train/iMiGUE_J.yaml
@@ -131,14 +131,14 @@ python main.py --config ./config/train/iMiGUE_B.yaml
 
 Replace each example checkpoint path below with the actual SAE-SC checkpoint for the corresponding dataset and stream.
 
-For MA-52:
+MA-52:
 
 ```bash
 python test.py --config ./config/test/MA52_J.yaml --weights ./path/to/MA52_J.pt
 python test.py --config ./config/test/MA52_B.yaml --weights ./path/to/MA52_B.pt
 ```
 
-For iMiGUE:
+iMiGUE:
 
 ```bash
 python test.py --config ./config/test/iMiGUE_J.yaml --weights ./path/to/iMiGUE_J.pt
@@ -149,13 +149,13 @@ python test.py --config ./config/test/iMiGUE_B.yaml --weights ./path/to/iMiGUE_B
 
 After generating predictions for both streams, run the following commands to obtain the fused predictions.
 
-For MA-52:
+MA-52:
 
 ```bash
 python test.py --merge ./work_dir/test/MA52_J ./work_dir/test/MA52_B --work-dir ./work_dir/test/MA52_2s
 ```
 
-For iMiGUE:
+iMiGUE:
 
 ```bash
 python test.py --merge ./work_dir/test/iMiGUE_J ./work_dir/test/iMiGUE_B --work-dir ./work_dir/test/iMiGUE_2s
