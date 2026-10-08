@@ -107,8 +107,6 @@ data/
     test_label.pkl
 ```
 
-The dataset loaders in `feeders/` read these files and perform online preprocessing for the joint and bone streams.
-
 
 
 ## Acknowledgement
