@@ -81,14 +81,33 @@ pip install -e ./torchpack
 
 
 
-## Datasets
+## Data Preparation
 
-The experiments in this work are conducted on the following public datasets:
+SAE-SC is evaluated on MA-52 and iMiGUE using preprocessed skeleton data in Pickle (`.pkl`) format.
 
-- **MA-52**
-- **iMiGUE**
+For the preprocessed skeleton data released by MMN, please refer to the [MMN dataset repository](https://huggingface.co/datasets/Geo2425/MMN). Follow the access requirements and terms specified by the data provider.
 
-Please refer to the official dataset providers for data access and usage requirements.
+Place the data under the repository root with the following structure:
+
+```text
+data/
+  MA52/
+    train_data.pkl
+    train_label.pkl
+    val_data.pkl
+    val_label.pkl
+    test_data.pkl
+    test_label.pkl
+  iMiGUE/
+    train_data.pkl
+    train_label.pkl
+    val_data.pkl
+    val_label.pkl
+    test_data.pkl
+    test_label.pkl
+```
+
+The dataset loaders in `feeders/` read these files and perform online preprocessing for the joint and bone streams.
 
 
 
