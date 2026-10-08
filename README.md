@@ -176,8 +176,6 @@ For evaluation instructions and related resources, please refer to:
 - **MA-52:** The [Codabench evaluation page](https://www.codabench.org/competitions/9066/) provides test-set submission and evaluation instructions.
 - **iMiGUE:** The [MiGA 2025 Challenge website](https://cv-ac.github.io/MiGA2025/) provides benchmark information, evaluation protocols, and related resources.
 
-Please check the respective websites for submission availability and required file formats.
-
 ## Acknowledgement
 
 We thank the authors of [Motion Matters: Motion-guided Modulation Network for Skeleton-based Micro-Action Recognition](https://github.com/momiji-bit/MMN) for making their code publicly available. Their implementation provided a valuable reference for this project.
