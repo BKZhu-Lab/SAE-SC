@@ -55,7 +55,28 @@ SAE-SC consists of three main modules:
 </p>
 
 
+## Installation
 
+Clone the repository and create a conda environment:
+
+```bash
+git clone https://github.com/BKZhu-Lab/SAE-SC.git
+cd SAE-SC
+
+conda create -n SAE_SC python=3.12 -y
+conda activate SAE_SC
+```
+
+Install PyTorch with CUDA support by following the
+[official installation instructions](https://pytorch.org/get-started/locally/).
+
+Then install the remaining dependencies and local packages from the repository root:
+
+```bash
+pip install numpy PyYAML tqdm scikit-learn tensorboardX timm chardet h5py
+pip install -e ./torchlight
+pip install -e ./torchpack
+```
 
 
 
