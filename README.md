@@ -107,55 +107,55 @@ data/
     test_label.pkl
 ```
 
-## 训练与测试
+## Training and Testing
 
-所有命令均在项目根目录下执行。J 和 B 分别表示关节流和骨骼流。
+Run all commands from the repository root. J and B denote the joint and bone streams, respectively.
 
-### 训练
+### Training
 
-MA-52：
+For MA-52:
 
 ```bash
 python main.py --config ./config/train/MA52_J.yaml
 python main.py --config ./config/train/MA52_B.yaml
 ```
 
-iMiGUE：
+For iMiGUE:
 
 ```bash
 python main.py --config ./config/train/iMiGUE_J.yaml
 python main.py --config ./config/train/iMiGUE_B.yaml
 ```
 
-### 测试
+### Testing
 
-请将以下示例权重路径替换为对应数据集和数据流的实际 SAE-SC 模型权重路径。
+Replace each example checkpoint path below with the actual SAE-SC checkpoint for the corresponding dataset and stream.
 
-MA-52：
+For MA-52:
 
 ```bash
 python test.py --config ./config/test/MA52_J.yaml --weights ./path/to/MA52_J.pt
 python test.py --config ./config/test/MA52_B.yaml --weights ./path/to/MA52_B.pt
 ```
 
-iMiGUE：
+For iMiGUE:
 
 ```bash
 python test.py --config ./config/test/iMiGUE_J.yaml --weights ./path/to/iMiGUE_J.pt
 python test.py --config ./config/test/iMiGUE_B.yaml --weights ./path/to/iMiGUE_B.pt
 ```
 
-### 双流融合
+### Two-Stream Fusion
 
-分别生成关节流和骨骼流的预测结果后，执行以下命令，得到融合后的预测结果。
+After generating predictions for both streams, run the following commands to obtain the fused predictions.
 
-MA-52：
+For MA-52:
 
 ```bash
 python test.py --merge ./work_dir/test/MA52_J ./work_dir/test/MA52_B --work-dir ./work_dir/test/MA52_2s
 ```
 
-iMiGUE：
+For iMiGUE:
 
 ```bash
 python test.py --merge ./work_dir/test/iMiGUE_J ./work_dir/test/iMiGUE_B --work-dir ./work_dir/test/iMiGUE_2s
